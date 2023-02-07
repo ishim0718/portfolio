@@ -59,19 +59,21 @@ nav ul a {
 .flex-container {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1400px;
+    max-width: 1600px;
 }
 
 .card {
     border: 2px solid;
     max-width: 500px;
     position: relative;
+    justify-content: center;
     text-align: center;
     color: var(--dark);
     opacity: 50%;
+    flex: 0 0 20%;
 }
 
 .card:hover {
@@ -95,6 +97,35 @@ nav ul a {
 .card img {
     max-height: 500px;
     max-width: 500px;
+}
+
+.card1 {
+    border: 2px solid;
+    max-width: 500px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    color: var(--dark);
+    opacity: 50%;
+    flex: 0 0 80%;
+}
+
+.card1:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.card1 p {
+    color: var(--med);
+    background-color: var(--light);
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 36px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
 }
 
 .aboutme {
@@ -142,6 +173,13 @@ h2 {
 
 .contact ul {
     display: inline-block;
+    background-color: var(--light);
+    color: var(--med);
+    font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: bold;
+}
+
+.contact li {
     background-color: var(--light);
     color: var(--med);
     font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
