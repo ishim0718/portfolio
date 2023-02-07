@@ -18,13 +18,15 @@ h1 {
     font-style: bold;
     margin-left: 100px;
     margin-right: 100px;
+    display: flex;
 }
 
 .mantra {
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     color : var(--light);
     background-color: var(--med);
+    flex-wrap: wrap;
 }
 
 nav {
@@ -42,16 +44,25 @@ nav ul li {
     color: var(--med);
     font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
     font-style: bold;
+    padding: 20px;
+}
+
+nav ul a {
+    display: inline-block;
+    background-color: var(--light);
+    color: var(--med);
+    font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    padding: 20px;
 }
 
 .flex-container {
     display: flex;
     flex-direction: row;
     align-items: stretch;
+    justify-content: space-around;
     flex-wrap: wrap;
     max-width: 1400px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .card {
@@ -90,16 +101,49 @@ nav ul li {
     display: flex;
     margin-left: 100px;
     margin-right: 100px;
+    align-items: center;
 }
 
 .aboutme img {
-    max-height: 300px;
-    max-width: 200px;
+    max-height: 400px;
+    margin: 5%;
 }
 
+h2 {
+    color: var(--dark);
+}
 .aboutme p {
     font-size: 15px;
-    color: white;
+    color: var(--med);
+    background-color: var(--light);
     flex-wrap: wrap;
-    max-width: 80%;
+    max-width: 40%;
+    padding: 20px;
+}
+
+.aboutme .accent-text {
+    font-style: bold;
+    font-size: 20px;
+    color: var(--accent);
+    background-color: var(--light);
+}
+
+.contact {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-around;
+}
+
+.contact p {
+    background-color: var(--light);
+    color: var(--med)
+
+}
+
+.contact ul {
+    display: inline-block;
+    background-color: var(--light);
+    color: var(--med);
+    font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: bold;
 }
