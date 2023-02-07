@@ -10,15 +10,24 @@
 }
 
 h1 {
+    font-size: 60px;
     padding: 20px;
     color: var(--dark);
     background-color: var(--med);
     font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
     font-style: bold;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.mantra {
+    font-size: 20px;
+    padding: 20px;
+    color : var(--light);
+    background-color: var(--med);
 }
 
 nav {
-    float: right;
     background-color: var(--light);
 }
 
@@ -29,8 +38,6 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    margin-left: 15px;
-    margin-right: 15px;
     background-color: var(--light);
     color: var(--med);
     font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
@@ -42,7 +49,9 @@ nav ul li {
     flex-direction: row;
     align-items: stretch;
     flex-wrap: wrap;
-    max-width: 1200px;
+    max-width: 1400px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .card {
@@ -50,7 +59,7 @@ nav ul li {
     max-width: 500px;
     position: relative;
     text-align: center;
-    color: var(--accent);
+    color: var(--dark);
     opacity: 50%;
 }
 
@@ -67,12 +76,30 @@ nav ul li {
     font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 36px;
     position: absolute;
-    bottom: 10px;
-    right: 20px;
+    bottom: 5px;
+    right: 5px;
 
 }
 
 .card img {
     max-height: 500px;
     max-width: 500px;
+}
+
+.aboutme {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.aboutme img {
+    max-height: 300px;
+    max-width: 200px;
+}
+
+.aboutme p {
+    font-size: 15px;
+    color: white;
+    flex-wrap: wrap;
+    max-width: 80%;
 }
