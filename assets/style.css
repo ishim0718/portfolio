@@ -60,9 +60,16 @@ nav ul a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
-    max-width: 1600px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.flex {
+    display: flex;
+    padding-left: 200px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -73,7 +80,6 @@ nav ul a {
     text-align: center;
     color: var(--dark);
     opacity: 50%;
-    flex: 0 0 20%;
 }
 
 .card:hover {
@@ -142,6 +148,7 @@ nav ul a {
 
 h2 {
     color: var(--dark);
+    padding-right: 300px;
 }
 .aboutme p {
     font-size: 15px;
@@ -162,13 +169,16 @@ h2 {
 .contact {
     display: flex;
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .contact p {
     background-color: var(--light);
-    color: var(--med)
-
+    color: var(--med);
+    margin-right: 100px;
+    padding: 25px;
 }
 
 .contact ul {
@@ -186,10 +196,21 @@ h2 {
     font-style: bold;
 }
 
+.contact ul a {
+    background-color: var(--light);
+    color: var(--med);
+    font-family: 'Helvetica', 'Ariel', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-style: bold;
+    padding-right: 25px;
+}
+
 @media screen and (max-width: 768px) {
     header,
     main,
-    .mantra, {
+    .mantra {
       flex-direction: column;
+    }
+    #main-img {
+        width: 768px;
     }
 }  
